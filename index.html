@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta charset="utf-8">
+<title>PS3 Menu</title>
+
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* الخلفية */
+#bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* إعدادات عامة للأزرار */
+.btn {
+    position: absolute;
+    background: transparent;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/* ==========================
+   الزر 1 (يفتح 2.html)
+   ========================== */
+#btn1 {
+    top: 70%;
+    left: 85%;
+
+    font-size: 22px;
+    padding: 10px 40px;
+
+    transform: scale(1);
+}
+
+/* ==========================
+   الزر 2 (يفتح 3.html)
+   ========================== */
+#btn2 {
+    top: 70%;
+    left: 65%;
+
+    font-size: 22px;
+    padding: 10px 40px;
+
+    transform: scale(1);
+}
+
+/* ==========================
+   الزر 3 (يفتح 4.html)
+   ========================== */
+#btn3 {
+    top: 70%;
+    left: 45%;
+
+    font-size: 22px;
+    padding: 10px 40px;
+
+    transform: scale(1);
+}
+</style>
+</head>
+
+<body>
+
+<img id="bg" src="1.png">
+
+<form action="page2.html">
+    <button id="btn1" class="btn"></button>
+</form>
+
+<form action="page3.html">
+    <button id="btn2" class="btn"></button>
+</form>
+
+<form action="page4.html">
+    <button id="btn3" class="btn"></button>
+</form>
+
+</body>
+</html>
